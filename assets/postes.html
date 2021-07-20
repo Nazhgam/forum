@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Forum made by Nazhgam</title>
+</head>
+<body>
+    <h2><a href="/">forum</a></h2>
+    
+    <h1>{{.Categ}}</h1>
+    <h2>{{.UserName}}
+    <h3>{{.Text}}</h3>
+    <form method="POST">
+<button type = "submit" name="postIdLike" value="{{.UserId}}">{{.Like}}</button>
+<button type = "submit" name="postIdDis" value="{{.UserId}}">{{.DisLike}}</button>
+<h2><a name="postIdCom" href="/comment">Open Comments</a></h2>
+</form>
+</body>
+</html> 

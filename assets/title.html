@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Forum made by Nazhgam</title>
+</head>
+<body>
+
+<h1>Post write!!</h1>
+<!-- <h2><a href="/logout">log out</a></h2> -->
+<h2><a href="/">forum</a></h2>
+ 
+<form method="POST">
+    <input itype="text" name="title" placeholder="input title"></input>
+    <textarea id="title" name="text" rows="4" cols="50"></textarea>
+   
+    <br>
+    <h5>choose category</h5>
+    {{range .}}
+    <ul>
+        <button type="submit" name="id" value="{{.Id}}">{{.Categ}}</button>   
+    </ul>
+    <br>
+    {{end}}
+</form>
+</body>
+</html>

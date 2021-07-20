@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Forum made by Nazhgam</title>
+</head>
+<body>
+    <h2><a href="/postes">postes</a></h2>
+    <form method="POST">
+{{range .}}
+<ul>
+    <button type="submit" name="id" value="{{.Id}}"> <li>{{.Title}}</li></button>
+</ul>   
+{{end}} 
+</form>
+</body>
+</html> 

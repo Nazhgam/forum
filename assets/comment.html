@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Forum made by Nazhgam</title>
+</head>
+<body>
+
+<h1>Comments!!</h1>
+<!-- <h2><a href="/logout">log out</a></h2> -->
+<h2><a href="/">main page</a></h2>
+<form method="POST">
+  <textarea id="title" name="text" rows="4" cols="50"></textarea>
+  <button type="submit" name="userid" value=".UserId">add comment</button> 
+</form>
+    {{range .}}
+  <h5>{{.Nick}}</h5>
+  <h6>{{.Comment}}</h6>
+{{end}}
+
+</body>
+</html> 

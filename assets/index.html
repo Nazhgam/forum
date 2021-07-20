@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Forum made by Nazhgam</title>
+</head>
+<body>
+
+<h1>Welcome to My Forum!!!</h1>
+<!-- <h2><a href="/logout">log out</a></h2> -->
+<h2><a href="/signup">sign up</a></h2>
+<h2><a href="/login">log in</a></h2>
+<h2><a href="/title">write post</a></h2>
+<form method="POST">
+    {{range .}}
+    <ul>
+   <button type="submit" name="Id" value="{{.Id}}"> <li>{{.Categ}}</li></button>
+
+</ul>
+{{end}}
+</form>
+</body>
+</html> 
